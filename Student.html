@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Student</title>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        fieldset {
+            border: 1px solid black;
+            margin-left: -2px;
+            border-radius: 5px;
+            padding-left: 20px;
+            width: 100%;
+            border-color: black;
+            
+        }
+
+        legend {
+            border-color: #b65fc3e4;
+            border-radius: 5px;
+            padding: 2px 15px;
+            border: 1px solid black;
+            width: auto;
+            margin-top: -2%;
+            float: initial;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-warning-subtle">
+    <div class="container-fluid">
+        <h1 class="display-6 fw-semibold text-center">Student Information</h1>
+        <div class="container">
+            <fieldset class="mt-4 bg-success-subtle">
+                <legend class="bg-primary-subtle">Student Details</legend>
+                <form>
+                    <div class="container px-3">
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <label class="form-label">Firt Name</label>
+                                <input type="Text" class="form-control border-3 border-primary-subtle" placeholder="Enter First Name" value="" />
+                            </div>
+
+
+
+                            <div class="col-md-6 ">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control border-3 border-primary-subtle" value="" placeholder="Enter Last Name" />
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Father Name</label>
+                                <input type="Text" class="form-control border-3 border-primary-subtle" value="" placeholder="Father's' Name" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Mother Name</label>
+                                <input type="Text" class="form-control border-3 border-primary-subtle" value="" placeholder="Mother's' Name" />
+                            </div>
+
+
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Email</label>
+                                <input type="email" maxlength="24" class="form-control border-3 border-primary-subtle" value="" placeholder="example@gmail.com" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Password</label>
+                                <input type="password" maxlength="10" class="form-control border-3 border-primary-subtle" value="" placeholder="***********" />
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Mobile Number</label>
+                                <input type="tel" maxlength="10" class="form-control border-3 border-primary-subtle" value="" placeholder="9865321254" />
+                            </div>
+
+
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <label class="form-label">Date Of Birth</label>
+                                <input type="Date" class="form-control border-3 border-primary-subtle" value="" />
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Time</label>
+                                <input type="Time" class="form-control border-3 border-primary-subtle" value="" />
+                            </div>
+
+                            <div class="col-md-4 ">
+                                <label class="form-label">Age</label>
+                                <input type="tel" maxlength="2" class="form-control border-3 border-primary-subtle" value="" placeholder="15" />
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <label class="form-label">Gender</label>
+                                <div class="form-check">
+                                    <input class="form-check-input from-control" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label  from-control" for="flexRadioDefault1">
+                                        &nbsp;Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input  from-control" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label  from-control" for="flexRadioDefault2">
+                                        &nbsp;Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Education</label>
+                                <div class="col gap-2">
+                                    <div>
+                                        <input class="form-check-input  from-control" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label  from-control" for="flexCheckDefault">
+                                            &nbsp;UG
+                                        </label>
+                                    </div>
+                                    <div class="col">
+                                        <input class="form-check-input  from-control" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="ml-2 form-check-label  from-control" for="flexCheckDefault">
+                                            &nbsp;PG
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <label class="form-label">State</label>
+                                <select class="form-control border-3 border-primary-subtle">
+                                    <option value="Select">Select</option>
+                                    <option value="Select">Madhya Pradesh</option>
+                                    <option value="Select">Gujrat</option>
+                                    <option value="Select">Rajsthan</option>
+                                    <option value="Select">Panjab</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">City</label>
+                                <select class="form-control border-3 border-primary-subtle">
+                                    <option value="Select">Select</option>
+                                    <option value="Select">Bhopal</option>
+                                    <option value="Select">Indore</option>
+                                    <option value="Select">Guna</option>
+                                    <option value="Select">Ujjain</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pb-4">
+                            <div class="col-md-6">
+                                <button class="btn btn-primary">Save</button>
+                                <button class="btn btn-outline-danger">Clear</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+            <div class="pb-4">
+
+                <fieldset class="mt-4 bg-success-subtle px-4">
+                    <legend class="bg-primary-subtle">Details</legend>
+                    <form class="table-responsive-md">
+                        <table class="mt-4 table table-striped table-bordered table-success table-hover bg-success-subtle">
+                            <tr>
+                                <th>S.No.</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>DOB</th>
+                                <th>Time</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Education</th>
+                                <th>State</th>
+                                <th>City</th>
+                                <th>Edit/Delete</th>
+
+                            </tr>
+                            <tr class="table-primary">
+                                <td>1</td>
+                                <td>Aman</td>
+                                <td>Das</td>
+                                <td>Aman@gmail.com</td>
+                                <td>9865322154</td>
+                                <td>12-30-2022</td>
+                                <td>08:12 AM</td>
+                                <td>21</td>
+                                <td>Male</td>
+                                <td>UG</td>
+                                <td>Gujrat</td>
+                                <td>Bhopal</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>2</td>
+                                <td>Chaman</td>
+                                <td>Gupta</td>
+                                <td>Chaman@gmail.com</td>
+                                <td>6265458754</td>
+                                <td>16-19-2021</td>
+                                <td>09:34 PM</td>
+                                <td>23</td>
+                                <td>Male</td>
+                                <td>UG</td>
+                                <td>Rajsthan</td>
+                                <td>Indore</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>3</td>
+                                <td>Hina</td>
+                                <td>Pandit</td>
+                                <td>Hina@gmail.com</td>
+                                <td>9264587549</td>
+                                <td>01-02-2018</td>
+                                <td>06:30 PM</td>
+                                <td>15</td>
+                                <td>Female</td>
+                                <td>UG</td>
+                                <td>Madhya Pradesh</td>
+                                <td>Ujjain</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>4</td>
+                                <td>Sana</td>
+                                <td>Tiwari</td>
+                                <td>Sana@gmail.com</td>
+                                <td>785963214</td>
+                                <td>01-14-2022</td>
+                                <td>08:12 AM</td>
+                                <td>09</td>
+                                <td>Female</td>
+                                <td>PG</td>
+                                <td>Panjab</td>
+                                <td>Indore</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-info">
+                                <td>5</td>
+                                <td>Fana</td>
+                                <td>Makbul</td>
+                                <td>Sfana@gmail.com</td>
+                                <td>9568596859</td>
+                                <td>07-12-2015</td>
+                                <td>09:45 AM</td>
+                                <td>24</td>
+                                <td>Female</td>
+                                <td>UG</td>
+                                <td>Rajsthan</td>
+                                <td>Guna</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-light">
+                                <td>6</td>
+                                <td>Aman</td>
+                                <td>Das</td>
+                                <td>Aman@gmail.com</td>
+                                <td>9865322154</td>
+                                <td>12-30-2022</td>
+                                <td>08:12 AM</td>
+                                <td>21</td>
+                                <td>Male</td>
+                                <td>UG</td>
+                                <td>Rajsthan</td>
+                                <td>Guna</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-dannger">
+                                <td>7</td>
+                                <td>Saman</td>
+                                <td>Nath</td>
+                                <td>Saman@gmail.com</td>
+                                <td>8956322154</td>
+                                <td>05-31-2022</td>
+                                <td>08:12 AM</td>
+                                <td>22</td>
+                                <td>Male</td>
+                                <td>UG</td>
+                                <td>Gujrat</td>
+                                <td>Indore</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td>8</td>
+                                <td>Gaman</td>
+                                <td>Jatt</td>
+                                <td>Gaman@gmail.com</td>
+                                <td>6584578695</td>
+                                <td>05-06-2012</td>
+                                <td>08:12 AM</td>
+                                <td>218</td>
+                                <td>Male</td>
+                                <td>PG</td>
+                                <td>Madhya Pradesh</td>
+                                <td>Jabalpur</td>
+                                <td>
+                                    <div class="row px-4">
+                                        <button class=" btn btn-primary btn-sm">Edit</button>
+                                        <br />
+                                        <button class="mt-2 btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
